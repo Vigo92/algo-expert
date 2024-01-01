@@ -16,9 +16,10 @@ public class TwoSums {
   public static void main(String[] args) {
     int [] input = {3,5,-4,8,11,1,-1,6};
     int target = 10;
-    System.out.println(Arrays.toString(twoSums(input, target)));
-    System.out.println(Arrays.toString(hashMapTwoSums(input,target)));
-    System.out.println(Arrays.toString(twoPointerTwoSums(input,target)));
+    int [] inputs = {1, 4, 6};
+//    System.out.println(Arrays.toString(twoSums(input, target)));
+//    System.out.println(Arrays.toString(hashMapTwoSums(input,target)));
+    System.out.println(Arrays.toString(twoPointerTwoSums(inputs,target)));
     
   }
   
@@ -69,7 +70,7 @@ public class TwoSums {
      if(sum < targetSum){
       leftPointer++;
       }
-    else if(sum < targetSum){
+    else if(sum > targetSum){
          rightPointer --;
     }
     else{
