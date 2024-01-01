@@ -2,6 +2,7 @@ package easy;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -15,8 +16,10 @@ public class TwoSums {
   public static void main(String[] args) {
     int [] input = {3,5,-4,8,11,1,-1,6};
     int target = 10;
-   // System.out.println(Arrays.toString(twoSums(input, target)));
+    System.out.println(Arrays.toString(twoSums(input, target)));
     System.out.println(Arrays.toString(hashMapTwoSums(input,target)));
+    System.out.println(Arrays.toString(twoPointerTwoSums(input,target)));
+    
   }
   
   private static int [] twoSums(int [] input, int target){
@@ -45,7 +48,6 @@ public class TwoSums {
     int [] response = new int[2];
     for(int i = 0; i < array.length; i++){
        sum = targetSum - numbers.get(i);
-       System.out.println(targetSum +"-" + numbers.get(i) +"=" + sum );
       numbers.remove(i);
       if(numbers.containsValue(sum)){
           response[0] = array[i];
@@ -55,6 +57,29 @@ public class TwoSums {
      }
     return new int []{0,0};
   }
-
   
-}
+  private static int[] twoPointerTwoSums(int [] array, int targetSum) {
+    List<Integer> numbers = Arrays.stream(array).boxed().sorted().toList();
+    System.out.println(numbers);
+    int [] response = new int[2];
+    int leftPointer = 0;
+    int rightPointer = numbers.size() - 1;
+    while (leftPointer < rightPointer){
+     int sum = numbers.get(leftPointer) + numbers.get(rightPointer);
+     if(sum < targetSum){
+      leftPointer++;
+      }
+    else if(sum < targetSum){
+         rightPointer --;
+    }
+    else{
+      if(sum == targetSum) {
+        response[0] = numbers.get(leftPointer);
+        response[1] = numbers.get(rightPointer);
+        return response;
+      }
+    }
+  }
+  return response;
+  }
+  }

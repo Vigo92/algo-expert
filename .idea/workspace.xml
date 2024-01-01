@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c329dd28-0ced-42f9-bf9a-0078976a9b37" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/easy/TwoSums.java" afterDir="false" />
+      <changelist_data name="Ugochukwu Obia  Vigo" email="41446983+vigo92@users.noreply.github.com" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/easy/TwoSums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/easy/TwoSums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/easy/TwoSums.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/easy/TwoSums.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703789711553</updated>
-      <workItem from="1703789712860" duration="27889000" />
+      <workItem from="1703789712860" duration="32347000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -114,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703890727558</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1704111235059</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704111235059</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
